@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Pixelify+Sans&family=Rubik+Doodle+Shadow&family=Zilla+Slab:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Pixelify+Sans&family=Rubik+Doodle+Shadow&family=Train+One&family=Zilla+Slab:wght@300&display=swap');@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@1&family=Pixelify+Sans&family=Rubik+Doodle+Shadow&family=Train+One&family=Zilla+Slab:wght@300&display=swap');
+*{margin: 0;padding: 0; box-sizing: border-box;}
+
+
+
+header{
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(255, 70, 126);
+    color: rgb(255, 255, 255);
+    position: fixed;
+    width: 100%;
+    font-family:'Train One';
+    font-size: 1.1rem;
+}
+
+header{
+    position: fixed;
+    z-index: 3;
+}
+
+section{
+    height: 100dvh;
+    width: 100dvw;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    padding-top: 4vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+#banner{ 
+    z-index: 1;
+    position: relative;
+    padding: 0;
+    background: rgb(254,165,210);
+background: radial-gradient(circle, rgba(254,165,210,1) 0%, rgba(255,231,250,1) 31%, rgba(253,236,246,1) 63%, rgba(255,255,255,1) 99%);
+    h1{ 
+        z-index: 4;
+        position: relative;
+        font-family: 'Train One';
+        color: rgb(255, 70, 126);
+        font-size: xx-large;
+        text-align: center;
+        margin-left: 170px;
+        margin-right: 170px;
+        top: 240px;
+
+    }
+}
+
+.bodies{ 
+    z-index: 2;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+
+}
+#Star{
+    background-image: url(Media/star.gif);
+    width: 300px;
+    height:300px;
+    position: absolute;
+    animation: starrymotion 10s linear infinite;
+
+
+}
+#pinkypie{
+    background-image: url(Media/pinkypie.gif);
+    width: 700px;
+    height: 700px;
+    position: absolute;
+    animation: pinkmotion 10s linear infinite;
+
+}
+#pinky{
+    background-image: url(Media/pinky.gif);
+    width: 250px;
+    height: 250px;
+    position: absolute;
+    animation: pinkiemotion 10s linear infinite;
+}
+#pinkearth{
+    background-image: url(Media/pinkearth.gif);
+    width: 1500px;
+    height: 1500px;
+    animation:pinkymotion 10s linear infinite;
+    
+}
+
+
+
+ /*AIMATIONSS✨✨*/
+
+@keyframes pinkmotion {
+    0%  {transform: translate(900px, 0px) scale(1);}
+    50%{transform: translate(900px, 0px) scale(.9);}
+    100% {transform: translate(900px, 0px) scale(1);}  
+  }
+@keyframes pinkymotion{
+    0%  {transform:translate(-550px, 200px);}
+    50%  {transform:translate(0px, 200px) skew(10deg, 10deg);}
+    100% {transform: translate(-550px, 200px);}
+}
+@keyframes pinkiemotion{
+    0%  {transform:translate(0px, 200px);}
+    50%{transform:translate(0px, 300px) rotate(180deg)}
+    100%  {transform:translate(0px, 200px);}
+}
+
+@keyframes starrymotion{
+    0%  {transform:translate(0px, 0px) scale(.5);}
+    50%  {transform:translate(50px, 0px) scale(1);}
+    100% {transform: translate(0px, 0px) scale(.5);}
+}
+
